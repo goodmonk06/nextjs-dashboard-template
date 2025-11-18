@@ -16,12 +16,21 @@ export async function GET(request: NextRequest) {
         skip,
         take: limit,
         orderBy: { createdAt: "desc" },
+        include: {
+          organization: {
+            select: {
+              id: true,
+              name: true,
+              slug: true,
+            },
+          },
+        },
       }),
       prisma.user.count(),
     ]);
 
     return successResponse({
-      users,
+      items: users,
       pagination: {
         page,
         limit,

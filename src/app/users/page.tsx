@@ -64,7 +64,7 @@ export default function UsersPage() {
       const response = await fetch("/api/users");
       if (!response.ok) throw new Error("Failed to fetch users");
       const result = await response.json();
-      setUsers(result.data.users);
+      setUsers(result.data.items);
       setTotalUsers(result.data.pagination.total);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Unknown error");
