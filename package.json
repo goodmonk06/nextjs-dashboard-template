@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-dashboard-template",
+  "version": "1.0.0",
+  "description": "Next.js + Tailwind Admin Dashboard Template",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\""
+  },
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.3",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  }
+}
